@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  http-server:
+    build: .
+    restart: always
+    ports:
+        - 8888:8888
