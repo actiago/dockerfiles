@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nginx1:
+    build: .
+    networks:
+      - web
+    ports:
+      - "80:80"
+
+networks:
+  web:
+    external: true
